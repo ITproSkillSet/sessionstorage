@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Working with sessionStorage
+</title>
+<script>
+function save(){
+
+fieldvalue=document.getElementById("username").value;
+sessionStorage.setItem('Username',fieldvalue);
+
+fieldvalue=document.getElementById("email").value;
+sessionStorage.setItem('User_Email',fieldvalue);
+
+fieldvalue=document.getElementById("phone").value;
+sessionStorage.('User_phone',fieldvalue);
+
+}
+</script>
+</head>
+<body>
+<h1>
+Working with sessionStorage
+</h1>
+<hr>
+<form name="form1" method="post" action="">
+<ul>
+
+<li>User Name</li>
+<li><input type="text" size="30" id="username">
+</li>
+
+<li>Email</li>
+<li><input type="email" size="30" id="email">
+</li>
+
+<li>phone</li>
+<li><input type="tel" size="30" id="phone">
+</li>
+
+<li>
+<input type="submit" value="submit" onclick="save()">
+</li>
+</ul>
+</form>
+</body>
+</html>
